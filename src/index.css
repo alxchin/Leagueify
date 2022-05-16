@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* can delete 
+.AboutMePage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.AboutMePage .left {
+  width: 50%;
+  float: left;
+  background-color: skyblue;
+}
+
+.AboutMePage .left h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.AboutMePage .left p {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 28%;
+}
+
+.aboutMePage .right {
+  background-color: cyan;
+  width: 50%;
+  float: right;
+}
+
+
+*/
