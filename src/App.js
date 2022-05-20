@@ -1,13 +1,17 @@
 
 import './App.css';
-import ChampionList from './frontpage/ChampionList';
-
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
-  return (
 
-    <ChampionList />
+  return (
+    <div>
+      <Router>
+        <AnimatedRoutes />
+      </Router>
+
+    </div>
   );
 }
 

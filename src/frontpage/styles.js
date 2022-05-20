@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import background from "../assets/images/worldbg.jpg"
 import { motion } from 'framer-motion'
+import searchIcon from '../assets/images/searchIcon.png'
 
 
 export const container = {
@@ -15,10 +16,16 @@ export const container = {
     }
 }
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
 min-height: 100%;
 height: auto !important;
 height: 100%;
+
+--webkit-scrollbar {
+    overflow: hidden;
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
 `
 
 export const Header = styled.div`
@@ -53,5 +60,24 @@ position: absolute;
 top: 150px;
 justify-content: center;
 padding: 0;
+
+`
+
+export const SearchBox = styled.div`
+position: absolute;
+display: flex;
+justify-content: center;
+align-items:center;
+width: 1500px;
+height: 20px;
+border-radius: 6px;
+z-index:10;
+`
+
+
+export const SearchBar = styled.input`
+`
+
+export const AlphaBar = styled.button`
 
 `

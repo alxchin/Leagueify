@@ -702,7 +702,7 @@ export const championData = [
   {
     "id": "chogath",
     "key": "31",
-    "name": "Cho'Gath",
+    "name": "Cho'gath",
     "title": "the Terror of the Void",
     "tags": [
       "https://cdn.discordapp.com/attachments/453433004321144844/975570664356474880/tank.png",
@@ -1867,7 +1867,7 @@ export const championData = [
   {
     "id": "kaisa",
     "key": "145",
-    "name": "Kai'Sa",
+    "name": "Kaisa",
     "title": "Daughter of the Void",
     "tags": [
       "https://cdn.discordapp.com/attachments/453433004321144844/975570709080342638/marksman.png"
@@ -2215,7 +2215,7 @@ export const championData = [
   {
     "id": "khazix",
     "key": "121",
-    "name": "Kha'Zix",
+    "name": "Kha'zix",
     "title": "the Voidreaver",
     "tags": [
       "https://cdn.discordapp.com/attachments/453433004321144844/975577092341252137/assassin.png"
@@ -2369,7 +2369,7 @@ export const championData = [
   {
     "id": "leblanc",
     "key": "7",
-    "name": "LeBlanc",
+    "name": "Leblanc",
     "title": "the Deceiver",
     "tags": [
       "https://cdn.discordapp.com/attachments/453433004321144844/975577092341252137/assassin.png",
@@ -3223,7 +3223,7 @@ export const championData = [
   {
     "id": "nunu",
     "key": "20",
-    "name": "Nunu & Willump",
+    "name": "Nunu",
     "title": "the Boy and His Yeti",
     "tags": [
       "https://cdn.discordapp.com/attachments/453433004321144844/975570664356474880/tank.png",
@@ -5164,7 +5164,7 @@ export const championData = [
   {
     "id": "velkoz",
     "key": "161",
-    "name": "Vel'Koz",
+    "name": "Velkoz",
     "title": "the Eye of the Void",
     "tags": [
       "https://cdn.discordapp.com/attachments/453433004321144844/975569460880633876/mage.png"

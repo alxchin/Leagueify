@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+*::-webkit-scrollbar {
+
+  display: none;
+
+}
 
 /* can delete 
 .AboutMePage {
