@@ -14,6 +14,11 @@ const ChampionList = () => {
     const [searchAlphabet, setSearchAlphabet] = useState('')
     const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
+    function alphaSearch(data) {
+        setSearchAlphabet(data);
+        setSearchChamp('');
+    }
+
     return (
         <Container
             initial={{ opacity: 0 }}
@@ -31,22 +36,26 @@ const ChampionList = () => {
             <ChampionContainer initial='hidden' animate='show'  >
                 {
                     championData.filter((d) => {
-                        if (searchChamp === "") {
-                            return (d)
-                        } else if (d.name.toLowerCase().includes(searchChamp.toLowerCase())) {
+                        if (searchAlphabet === '') {
                             return (d)
                         } else if (d.name.toLowerCase().charAt(0) === searchAlphabet.toLowerCase()) {
                             return (d)
                         }
+
+                    }).filter((d) => {
+                        if (searchChamp === '') {
+                            return (d)
+                        } else if (d.name.toLowerCase().includes(searchChamp.toLowerCase()))
+                            return (d)
                     }).map(d =>
                         <Cards data={d} key={d.id} />
                     )
                 }
             </ChampionContainer>
             <SearchBox>
-                <SearchBar type="text" placeholder="Search..." onChange={event => { setSearchChamp(event.target.value) }} />
+                <SearchBar type="text" placeholder="Search..." onChange={event => { setSearchChamp(event.target.value) && setSearchAlphabet('') }} />
                 {alphabet.map(data =>
-                    <AlphaBar onClick={event => { setSearchAlphabet(data) }}> {data} </AlphaBar>
+                    <AlphaBar onClick={() => { alphaSearch(data) }}> {data} </AlphaBar>
                 )}
             </SearchBox>
             {console.log(searchAlphabet)}
