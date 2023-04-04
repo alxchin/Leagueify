@@ -5,8 +5,9 @@ export const SoundBox = styled.div`
 display:flex;
 cursor:pointer;
 position:absolute;
-left:7rem;
+right:16rem;
 top:3rem;
+border: 2px solid red;
 
 z-index:10;
 

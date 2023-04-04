@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Background, Header, ChampionContainer, container, SearchBar, SearchBox, AlphaBar } from './styles';
-import logo from "../assets/images/logo.png";
+import { Container, Background, Header, ChampionContainer, SearchBar, SearchBox, AlphaBar } from './styles';
+import logo from "../assets/images/leagueify.png";
 import { championData } from '../data/data';
 import Cards from '../subcomponents/Cards';
 import Sound from '../music/Sound';
@@ -12,7 +12,7 @@ const ChampionList = () => {
 
     const [searchChamp, setSearchChamp] = useState('')
     const [searchAlphabet, setSearchAlphabet] = useState('')
-    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'RESET']
 
     function alphaSearch(data) {
         setSearchAlphabet(data);
@@ -27,16 +27,16 @@ const ChampionList = () => {
         >
 
             <Header>
-                <img src={logo} style={{ width: 300, top: 2 }} alt="logo" />
+                <img src={logo} style={{ width: 300, top: 30, backgroundColor: 'transparent' }} alt="logo" />
             </Header>
 
             <Background />
-            <Sound />
+
 
             <ChampionContainer initial='hidden' animate='show'  >
                 {
                     championData.filter((d) => {
-                        if (searchAlphabet === '') {
+                        if (searchAlphabet === '' || searchAlphabet === 'RESET') {
                             return (d)
                         } else if (d.name.toLowerCase().charAt(0) === searchAlphabet.toLowerCase()) {
                             return (d)

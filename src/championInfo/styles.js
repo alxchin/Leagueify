@@ -47,6 +47,13 @@ export const Button = styled.button`
 width: 70px;
 height: 30px;
 position: absolute;
+background-color:transparent;
+border:none;
+margin-top: 450px;
+cursor:pointer;
+margin-left: 2%;
+
+
 `
 
 export const LeftMain = styled.div`
@@ -56,7 +63,7 @@ position: relative;
 align-content: center;
 width: 40%;
 max-width: 100%;
-border: 2px dotted red;
+
 float: left;
 height: 100%;
 
@@ -67,7 +74,7 @@ display: flex;
 position: relative;
 float:right;
 width: 100%;
-border: 2px dotted blue;
+
 height: 100%;
 color: #BBA14F;
 flex-direction: column;
@@ -79,7 +86,7 @@ width: 100%;
 float: top;
 justify-content: center;
 margin:0%;
-border: 2px solid yellow;
+
 height: 15%;
 text-shadow: -1px 0 black, 0 1px white, 1px 0 white, 0 -1px black;
 font-size:50px;
@@ -90,7 +97,7 @@ margin: 0%;
 display: flex;
 height: 30%;
 width: 100%;
-border: 2px solid red;
+border: 2px solid black;
 justify-content: space-around;
 flex-wrap: wrap;
 align-items:center;
@@ -104,25 +111,26 @@ img{
 export const PassiveBox = styled.div`
 position: relative;
 text-align: center;
-border: 2px solid purple;
 display: flex;
-
-
-
 `
+
 export const Ability = styled.div`
 position: absolute;
 font-size: 17px;
 color: black;
-right:5px;
-bottom: -5px;
+right: 18px;
+top: -15px;
+border: 2px solid black;
+width: 30px;
+border-radius: 50%;
+background-color: gray;
 `
 
 export const Description = styled.div`
 display: flex;
 width: 100%;
 height:50%;
-border: 2px solid green;
+
 flex-direction: column;
 gap: 4%;
 }
@@ -147,7 +155,7 @@ text-shadow: -1px 0 black, 0 1px black, 1px 0 white, 0 -1px white;
 
 export const Box = styled.div`
 position: absolute;
-border: 2px dotted red;
+
 display: flex;
 align-items: center;
 justify-content:center;

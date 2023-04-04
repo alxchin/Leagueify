@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { Container, Background, Button, Main, LeftMain, RightMain, ChampionName, SpellBox, Description, LoreTitle, LoreDescription, PassiveBox, Ability, HoverText } from './styles';
 import { Link } from 'react-router-dom';
 import $ from "jquery";
+import { FaAngleLeft } from 'react-icons/fa';
 
 
 const ChampionInfo = () => {
@@ -56,7 +57,7 @@ const ChampionInfo = () => {
             >
                 <Background />
                 <Link to={'/'}>
-                    <Button> Back </Button>
+                    <Button> <FaAngleLeft style={{ width: 70, height: 70 }} /> </Button>
                 </Link>
                 <Main>
                     <LeftMain>
@@ -105,3 +106,4 @@ const ChampionInfo = () => {
 };
 
 export default ChampionInfo
+//<strong><FaAngleLeft style={{ width: 60, height: 80 }} /> </strong>

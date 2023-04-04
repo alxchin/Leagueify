@@ -20,11 +20,12 @@ export const Container = styled(motion.div)`
 min-height: 100%;
 height: auto !important;
 height: 100%;
+width: 100%;
 
 --webkit-scrollbar {
     overflow: hidden;
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent; 
 }
 `
 
@@ -64,20 +65,40 @@ padding: 0;
 `
 
 export const SearchBox = styled.div`
-position: absolute;
+width: auto;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
-align-items:center;
-width: 1500px;
-height: 20px;
-border-radius: 6px;
-z-index:10;
+align-items: center;
+top: 100px;
+padding: 0;
+margin-top: 100px;
 `
 
 
 export const SearchBar = styled.input`
+padding: 0.5em;
+margin: 0.5em;
+color: black;
+background-color: #f5f5dc;
+border: none;
+border-radius: 3px;
+width: 100px;
 `
 
 export const AlphaBar = styled.button`
+padding: 0.5em;
+margin: 0.2em;
+color: black;
+background-color:#f5f5dc;
+border: none;
+border-radius: 4px;
+width: auto;
+cursor: pointer;
+
+&:active {
+    transform: scale(1.1);
+    background-color:gray;
+}
 
 `
